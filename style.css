@@ -1,0 +1,426 @@
+body{
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+    background-color: #000;
+}
+.container{
+    display: none;
+}
+.container.show{
+	max-width: 428px;
+	margin: 0 auto;
+	background-color: #313438;
+	height: 100vh;
+    display: block;
+}
+
+a{
+	text-decoration: none;
+}
+
+.header{
+	display: flex;
+	justify-content: space-evenly;
+	color: #fff;
+	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);
+	padding: 2em 0;
+	align-items: center;
+}
+
+.contact-search{
+	font-size: 1.2em;
+	padding:.3em .3em;
+	border-radius: 100px;
+	border:1px solid white;
+	outline: none;
+}
+
+
+.contacts-library{
+	background: #313438;
+}
+.no-contacts{
+ text-align: center;
+ color: white;
+ padding: 100px 0px;
+}
+
+.add{
+	color: #fff;
+	font-size: 1.5em;
+}
+
+i{
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.contact-name{
+	color: #fff;
+	font-size: 1.2em;
+}
+
+
+ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+hr{
+	border: 1px solid #494a4b;
+}
+
+.list__item{
+	list-style: none;
+}
+
+.relationship{
+	color: #fff;
+	width: 6em;
+	text-align: center;
+	padding: .4em .5em;
+	border-radius: 100px;
+	border-top-left-radius: 0;
+	background-color: #75A85E;
+}
+
+.contact-section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1.5em;
+	transition: 0.3s;
+}
+
+.contact-section:hover{
+	background-color: #48494a;
+}
+
+.text{
+	padding-left: 1em;
+}
+/* ////////////edit-page-styles/////////// */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.edit-contact-page{
+    background-color: #313438;
+    max-width: 428px;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+/* .container{
+	max-width: 428px;
+	margin: 0 auto;
+	background-color: #313438;
+	min-height: 100vh;
+} */
+
+
+.edit-contact-page .hero{
+	color: white;
+	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);	
+	padding: 2em 0; 
+}
+
+.edit-contact-page .back-btn{
+	color: #fff;
+	font-size: 1.7em;
+	padding-left: 1em;
+}
+
+.edit-contact-page .contact-info{
+    background-color: #313438;
+	padding: 1.5em;
+}
+
+
+.edit-contact-page .hero-info{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.edit-contact-page .relationship-hero{
+	width: 5em;
+	text-align: center;
+	padding: .4em .5em;
+	border-radius: 100px;
+	border-top-left-radius: 0;
+	margin: 0;
+}
+
+.edit-contact-page .friend{
+	background-color: #75A85E;
+}
+
+.edit-contact-page .info-line{
+		display: flex;
+		color: #fff;
+		width: 90%;
+		margin: 0 auto;
+		padding: 1em 2em;
+		margin-top: 2em;
+		border-radius: 20px;
+		box-shadow: inset 6px 6px 12px #2d2f33, 
+				inset -6px -6px 12px #35393d;
+}
+
+.edit-contact-page p{
+	margin: 0;
+	padding-left: 2em;
+}
+
+.edit-contact-page .icon-gradient{
+	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);
+	border-radius: 100px;
+	font-size: 1.5em;
+	padding: .5em;
+}
+
+.edit-contact-page .location{
+	padding: .5em .6em;
+}
+
+.edit-contact-page .type{
+	border: none;
+	background: none;
+	padding-left: 2em;
+	font-size: 1.2em;
+	color: #fff;
+	outline: none;
+}
+
+.edit-contact-page .button-container{
+	background-color: #313438;
+	padding: 2em 3.5em;
+	color: #fff;
+}
+
+.edit-contact-page .update-contact{
+	display: flex;
+	color: #fff;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+	padding: 1em 2em;
+	border-radius: 20px;
+	box-shadow:  6px 6px 12px #2d2f33, 
+             -6px -6px 12px #35393d;
+}
+
+.edit-contact-page .button{
+	 background-color: #313438;
+	 border: none;
+	 color: #fff;
+	 font-size: 1.3em;
+	 padding-left: 1.5em;
+	 outline: none;
+	cursor: pointer;
+}
+/* ////////////contact-profile-page-styles/////////// */
+.contact-profile-page{
+    background-color: #313438;
+    max-width: 428px;
+	margin: 0 auto;
+	height: 100vh;
+}
+.contact-profile-page .hero{
+	color: #fff;
+	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);	
+	padding: 2em 0; 
+}
+
+.contact-profile-page .back-btn{
+	color: #fff;
+	font-size: 1.7em;
+	padding-left: 1em;
+}
+
+.contact-profile-page .contact-info{
+    background-color: #313438;
+	padding: 3em 1.5em;
+}
+
+.contact-profile-page .hero-info{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.contact-profile-page .relationship{
+	width: 5em;
+	text-align: center;
+	padding: .4em .5em;
+	border-radius: 100px;
+	border-top-left-radius: 0;
+	margin: 0;
+}
+
+.contact-profile-page .friend{
+	background-color: #75A85E;
+}
+
+.contact-profile-page .info-line{
+	display: flex;
+	color: #fff;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+	padding: 1em 2em;
+	margin-top: 2em;
+	border-radius: 20px;
+	box-shadow:  6px 6px 12px #2d2f33, 
+             -6px -6px 12px #35393d;
+}
+
+.contact-profile-page p{
+	margin: 0;
+	padding-left: 2em;
+}
+
+.contact-profile-page .icon-gradient{
+	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);
+	border-radius: 100px;
+	font-size: 1.5em;
+	padding: .5em;
+}
+
+.contact-profile-page #location{
+	padding: .5em .6em;
+}
+.contact-profile-page .info-line a{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+.contact-profile-page .edit-contact{
+	background-color: #313438;
+	padding: 2.5em 3.5em;
+	text-align: center;
+	color: #fff;
+}
+
+/* ////////////delete-page-styles/////////// */
+.delete-page{
+    max-width: 428px;
+	margin: 0 auto;
+	height: 100vh;
+    background-color: #313438;
+}
+.delete-page .hero{
+	color: white;
+	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);	
+	padding: 2em 0; 
+}
+
+.delete-page .back-btn{
+	color: #fff;
+	font-size: 1.7em;
+	padding-left: 1em;
+}
+
+
+.delete-page .hero-info{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.delete-page .relationship-hero{
+	width: 5em;
+	text-align: center;
+	padding: .4em .5em;
+	border-radius: 100px;
+	border-top-left-radius: 0;
+	margin: 0;
+	background-color: #75A85E;
+}
+
+.delete-page .friend{
+	background-color: #75A85E;
+}
+.delete-page .hero{
+	color: white;
+	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);	
+	padding: 2em 0; 
+}
+
+.delete-page .back-btn{
+	color: #fff;
+	font-size: 1.7em;
+	padding-left: 1em;
+}
+
+
+.delete-page .hero-info{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.delete-page .relationship-hero{
+	width: 5em;
+	text-align: center;
+	padding: .4em .5em;
+	border-radius: 100px;
+	border-top-left-radius: 0;
+	margin: 0;
+	background-color: #75A85E;
+}
+
+.delete-page .friend{
+	background-color: #75A85E;
+}
+
+.delete-page .delete-container{
+	background-color: #313438;
+	color: #fff;
+	text-align: center;
+}
+
+.delete-page p{
+	padding-bottom: 2em;
+	color: #fff;
+}
+
+.delete-page .delete-container{
+	padding: 2em 3.5em;
+}
+
+.delete-page .delete-contact{
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+	padding: 1em 2em;
+	border-radius: 20px;
+	box-shadow:  6px 6px 12px #2d2f33, 
+             -6px -6px 12px #35393d;
+}
+
+.delete-page .delete-button{
+	 background-color: #313438;
+	 border: none;
+	 color: #fff;
+	 font-size: 1.3em;
+	 padding-left: 1.5em;
+	 cursor: pointer;
+}
+
+.delete-page .delete-icon{
+	background: linear-gradient(90deg, rgba(111,177,127,1) 0%, rgba(154,173,89,1) 100%);
+	border-radius: 100px;
+	font-size: 1.5em;
+	padding: .5em;
+	cursor: pointer;
+}
+@media(max-width:768px){
+    .container.show, .edit-contact-page, .contact-profile-page, .delete-page{
+        max-width: 100vw;
+    }
+}
